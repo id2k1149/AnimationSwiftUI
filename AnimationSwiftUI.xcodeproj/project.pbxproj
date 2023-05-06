@@ -11,6 +11,7 @@
 		503ACFB52A06BE830007B580 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503ACFB42A06BE830007B580 /* ContentView.swift */; };
 		503ACFB72A06BE850007B580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503ACFB62A06BE850007B580 /* Assets.xcassets */; };
 		503ACFBA2A06BE850007B580 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503ACFB92A06BE850007B580 /* Preview Assets.xcassets */; };
+		503ACFC12A06C2BC0007B580 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503ACFC02A06C2BC0007B580 /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		503ACFB42A06BE830007B580 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		503ACFB62A06BE850007B580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		503ACFB92A06BE850007B580 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		503ACFC02A06C2BC0007B580 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				503ACFB22A06BE830007B580 /* AnimationSwiftUIApp.swift */,
 				503ACFB42A06BE830007B580 /* ContentView.swift */,
+				503ACFC02A06C2BC0007B580 /* TriangleView.swift */,
 				503ACFB62A06BE850007B580 /* Assets.xcassets */,
 				503ACFB82A06BE850007B580 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				503ACFB52A06BE830007B580 /* ContentView.swift in Sources */,
+				503ACFC12A06C2BC0007B580 /* TriangleView.swift in Sources */,
 				503ACFB32A06BE830007B580 /* AnimationSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
