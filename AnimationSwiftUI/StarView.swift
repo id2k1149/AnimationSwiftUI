@@ -21,6 +21,6 @@ struct StarView: View {
 struct StarView_Previews: PreviewProvider {
     static var previews: some View {
         StarView()
-            .frame(width: 100, height: 100)
+            .frame(width: 180, height: 180)
     }
 }

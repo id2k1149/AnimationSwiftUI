@@ -19,7 +19,7 @@ struct TriangleView: View {
             
             Path { path in
                 path.move(to: CGPoint(x: left, y: size))
-                path.addLine(to: CGPoint(x: middle, y: 0))
+                path.addLine(to: CGPoint(x: middle, y: 3))
                 path.addLine(to: CGPoint(x: right, y: size))
             }
 //            .fill(Color(.orange))
@@ -31,6 +31,26 @@ struct TriangleView: View {
                     )
             )
             .offset(x: 0, y: -size / 2)
+            
+            Path { path in
+                path.move(to: CGPoint(x: left * 1.86, y: size * 0.67))
+                path.addLine(to: CGPoint(x: middle , y: 0))
+            }
+            .stroke(
+                Color.red,
+                style: StrokeStyle(lineWidth: 5)
+            )
+            .offset(x: 0, y: -size / 2)
+            
+            Path { path in
+                path.move(to: CGPoint(x: middle, y: 0))
+                path.addLine(to: CGPoint(x: right * 0.86, y: size * 0.67))
+            }
+            .stroke(
+                Color.red,
+                style: StrokeStyle(lineWidth: 5)
+            )
+            .offset(x: 0, y: -size / 2)
         }
     }
 }
@@ -38,6 +58,6 @@ struct TriangleView: View {
 struct TriangleView_Previews: PreviewProvider {
     static var previews: some View {
         TriangleView()
-            .frame(width: 240, height: 240)
+            .frame(width: 300, height: 300)
     }
 }
