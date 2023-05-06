@@ -14,15 +14,22 @@ struct TriangleView: View {
             let height = geometry.size.height
             let size = min(width, height)
             let middle = size / 2
-            let left = size * 0.1
-            let right = size * 0.9
+            let left = size * 0.137
+            let right = size - left
             
             Path { path in
                 path.move(to: CGPoint(x: left, y: size))
                 path.addLine(to: CGPoint(x: middle, y: 0))
                 path.addLine(to: CGPoint(x: right, y: size))
             }
-            .fill(Color(.orange))
+//            .fill(Color(.orange))
+            .fill(
+                LinearGradient(
+                    colors: [.red, .black],
+                    startPoint: .top,
+                    endPoint: .bottom
+                    )
+            )
             .offset(x: 0, y: -size / 2)
         }
     }
@@ -31,6 +38,6 @@ struct TriangleView: View {
 struct TriangleView_Previews: PreviewProvider {
     static var previews: some View {
         TriangleView()
-            .frame(width: 100, height: 100)
+            .frame(width: 240, height: 240)
     }
 }
