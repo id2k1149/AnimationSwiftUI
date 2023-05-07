@@ -11,7 +11,7 @@ struct StarView: View {
     var body: some View {
         ZStack {
             ForEach(0..<5) { iteration in
-                TriangleView()
+               SectorView()
                     .rotationEffect(.degrees(Double(iteration * 72)))
             }
         }
@@ -21,6 +21,6 @@ struct StarView: View {
 struct StarView_Previews: PreviewProvider {
     static var previews: some View {
         StarView()
-            .frame(width: 180, height: 180)
+            .frame(width: 100, height: 100)
     }
 }
