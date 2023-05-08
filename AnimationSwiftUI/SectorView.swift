@@ -14,7 +14,7 @@ struct SectorView: View {
             let height = geometry.size.height
             let size = min(width, height)
             let middle = size / 2
-            let left = size * 0.137
+            let left = size * 0.137638
             let right = size - left
             
             Path { path in
@@ -24,14 +24,26 @@ struct SectorView: View {
                 path.addLine(to: CGPoint(x: middle, y: size * 1.5))
                 path.closeSubpath()
             }
-            .fill(
-                LinearGradient(
-                    colors: [.red, .orange],
-                    startPoint: .top,
-                    endPoint: .bottom
-                    )
-            )
+//            .fill(
+//                LinearGradient(
+//                    colors: [.red, .orange],
+//                    startPoint: .top,
+//                    endPoint: .bottom
+//                    )
+//            )
+            .stroke(Color.red, lineWidth: 2)
             .offset(x: 0, y: -size)
+            
+            Path { path in
+                path.move(to: CGPoint(x: 0, y: 0))
+                path.addLine(to: CGPoint(x: size, y: 0))
+                path.addLine(to: CGPoint(x: size, y: size))
+                path.addLine(to: CGPoint(x: 0, y: size))
+                path.closeSubpath()
+            }
+            .stroke(Color.green, lineWidth: 2)
+            
+            
         }
     }
 }
@@ -39,6 +51,6 @@ struct SectorView: View {
 struct SectorView_Previews: PreviewProvider {
     static var previews: some View {
         SectorView()
-            .frame(width: 200, height: 200)
+            .frame(width: 100, height: 100)
     }
 }

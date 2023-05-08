@@ -10,15 +10,15 @@ import SwiftUI
 struct StarRaysView: View {
     var body: some View {
         ZStack {
-            Circle()
-                .foregroundColor(.blue)
-            
             ZStack {
                 ForEach(0..<5) { iteration in
                     SectorView()
                         .rotationEffect(.degrees(Double(iteration * 72)))
                 }
             }
+            
+            Circle()
+                .foregroundColor(.blue)
         }
     }
 }

@@ -19,10 +19,12 @@ struct ButtonView: View {
                 HStack {
                     ZStack {
                         Circle()
-                            .padding([.bottom, .top], 6)
+                            .foregroundColor(.blue)
                         StarView()
-                            .padding()
                     }
+                    .padding(.all, 5)
+                    .frame(width: 60, height: 60)
+                   
                     Text(title)
                         .font(.title)
                         .fontWeight(.bold)

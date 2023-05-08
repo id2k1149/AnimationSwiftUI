@@ -19,6 +19,8 @@
 		509CC9BB2A08203A005CC1BE /* TriangleWithTwoBordersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CC9BA2A08203A005CC1BE /* TriangleWithTwoBordersView.swift */; };
 		509CC9BD2A083F5B005CC1BE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CC9BC2A083F5B005CC1BE /* ButtonView.swift */; };
 		509CC9BF2A0843CB005CC1BE /* StarRaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CC9BE2A0843CB005CC1BE /* StarRaysView.swift */; };
+		509CC9C12A0848EC005CC1BE /* SectorTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CC9C02A0848EC005CC1BE /* SectorTwoView.swift */; };
+		509CC9C32A08637E005CC1BE /* SectorInCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CC9C22A08637E005CC1BE /* SectorInCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		509CC9BA2A08203A005CC1BE /* TriangleWithTwoBordersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleWithTwoBordersView.swift; sourceTree = "<group>"; };
 		509CC9BC2A083F5B005CC1BE /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		509CC9BE2A0843CB005CC1BE /* StarRaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRaysView.swift; sourceTree = "<group>"; };
+		509CC9C02A0848EC005CC1BE /* SectorTwoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectorTwoView.swift; sourceTree = "<group>"; };
+		509CC9C22A08637E005CC1BE /* SectorInCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorInCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				503ACFB42A06BE830007B580 /* ContentView.swift */,
 				503ACFC02A06C2BC0007B580 /* TriangleView.swift */,
 				509CC9B42A081563005CC1BE /* SectorView.swift */,
+				509CC9C02A0848EC005CC1BE /* SectorTwoView.swift */,
+				509CC9C22A08637E005CC1BE /* SectorInCircleView.swift */,
 				503ACFC22A06CB470007B580 /* StarView.swift */,
 				509CC9BE2A0843CB005CC1BE /* StarRaysView.swift */,
 				509CC9B62A081738005CC1BE /* StarWithBorderView.swift */,
@@ -168,6 +174,8 @@
 				509CC9B52A081563005CC1BE /* SectorView.swift in Sources */,
 				509CC9B92A081989005CC1BE /* TriangleColoredInsideView.swift in Sources */,
 				503ACFC32A06CB470007B580 /* StarView.swift in Sources */,
+				509CC9C32A08637E005CC1BE /* SectorInCircleView.swift in Sources */,
+				509CC9C12A0848EC005CC1BE /* SectorTwoView.swift in Sources */,
 				509CC9B72A081738005CC1BE /* StarWithBorderView.swift in Sources */,
 				503ACFB32A06BE830007B580 /* AnimationSwiftUIApp.swift in Sources */,
 				509CC9BD2A083F5B005CC1BE /* ButtonView.swift in Sources */,
