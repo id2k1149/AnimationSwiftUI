@@ -11,12 +11,13 @@ struct StarView: View {
     let rays: Int
     
     var body: some View {
-        let angle = 360 / rays
+        let angle = 360 / Double(rays)
         ZStack {
             ForEach(0..<rays, id: \.self) { iteration in
                 SectorInCircleView(rays: rays)
-                    .rotationEffect(.degrees(Double(iteration * angle)))
+                    .rotationEffect(.degrees(Double(iteration) * angle))
             }
+//            Text("\(lround(angle))")
         }
     }
 }
