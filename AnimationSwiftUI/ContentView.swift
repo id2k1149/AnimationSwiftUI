@@ -10,10 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Enter a number from 3 to 12")
+                .font(.title)
+                .padding(.all, 6.0)
+            TextField("3...12", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .frame(width: 60, height: 30.0)
+            ButtonView(title: "Draw ",
+                       color: .blue,
+                       action: {})
+            Spacer()
+            StarView()
+                .frame(width: 300, height: 300)
+                .overlay(Circle().stroke(lineWidth: 1))
+            
+            Spacer()
+            
         }
         .padding()
     }

@@ -22,8 +22,8 @@ struct SectorInCircleView: View {
             let value = middle / (tgAngleTwo + tgAngleCenter)
             
             ZStack {
-                Circle()
-                    .stroke(Color.red, lineWidth: 1)
+//                Circle()
+//                    .stroke(Color.red, lineWidth: 1)
                 
                 Path { path in
                     path.move(to: CGPoint(x: middle, y: 0))

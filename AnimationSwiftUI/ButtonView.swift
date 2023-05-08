@@ -17,19 +17,15 @@ struct ButtonView: View {
             Button(action: action) {
                 
                 HStack {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(.blue)
-                        StarView()
-                    }
-                    .padding(.all, 5)
-                    .frame(width: 60, height: 60)
-                   
+                    StarView()
+                        .padding(.all, 5)
+                        .frame(width: 60, height: 60)
+                    
                     Text(title)
                         .font(.title)
                         .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding(.trailing, 6)
+                        .foregroundColor(.white)
+                        .padding(.trailing, 6)
                 }
             }
             .frame(width: 200, height: 60)
@@ -38,21 +34,15 @@ struct ButtonView: View {
             .overlay(
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
                     .stroke(Color.black, lineWidth: 4)
-        )
-            
-            
-            
-            
+            )
         }
-        
-        
     }
 }
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonView(title: "TapMe",
-                   color: .red,
+                   color: .blue,
                    action: {})
     }
 }
