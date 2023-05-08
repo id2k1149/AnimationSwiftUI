@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SectorInCircleView: View {
+    let rays: Int
+    
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
             let height = geometry.size.height
             let size = min(width, height)
             let middle = size / 2
-            let rays = 12
+           
             let angleCenter = 360 / rays
             let tgAngleCenter = tan(Double(angleCenter) * Double.pi / 180)
             let angleTwo = (180 - angleCenter) / 2
@@ -47,7 +49,7 @@ struct SectorInCircleView: View {
 
 struct SectorInCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        SectorInCircleView()
+        SectorInCircleView(rays: 5)
             .frame(width: 300, height: 300)
     }
 }

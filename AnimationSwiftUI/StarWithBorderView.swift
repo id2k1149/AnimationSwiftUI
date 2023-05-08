@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StarWithBorderView: View {
     var body: some View {
-        StarView()
+        StarView(rays: 5)
             .opacity(0.2)
             .foregroundColor(Color("aqua"))
     }

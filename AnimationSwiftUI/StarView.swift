@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct StarView: View {
+    let rays: Int
+    
     var body: some View {
-        let rays = 12
         let angle = 360 / rays
         ZStack {
             ForEach(0..<rays, id: \.self) { iteration in
-               SectorInCircleView()
+                SectorInCircleView(rays: rays)
                     .rotationEffect(.degrees(Double(iteration * angle)))
             }
         }
@@ -22,7 +23,7 @@ struct StarView: View {
 
 struct StarView_Previews: PreviewProvider {
     static var previews: some View {
-        StarView()
+        StarView(rays: 5)
             .frame(width: 300, height: 300)
     }
 }

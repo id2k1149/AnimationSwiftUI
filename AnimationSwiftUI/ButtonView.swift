@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ButtonView: View {
     let title: String
-    let color: Color
     let action: () -> Void
+    let rays: Int
     
     var body: some View {
         VStack {
@@ -23,13 +23,13 @@ struct ButtonView: View {
                         .foregroundColor(.white)
                         .padding(.trailing, 6)
                     
-                    StarView()
+                    StarView(rays: rays)
                         .padding(.all, 5)
-                        .frame(width: 60, height: 60)
+                        .frame(width: 50, height: 50)
                 }
             }
             .frame(width: 300, height: 60)
-            .background(color)
+            .background(.blue)
             .cornerRadius(20)
             .overlay(
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -42,7 +42,7 @@ struct ButtonView: View {
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonView(title: "How to draw ",
-                   color: .blue,
-                   action: {})
+                   action: {},
+                   rays: 5)
     }
 }
