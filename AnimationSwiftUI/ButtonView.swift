@@ -17,18 +17,18 @@ struct ButtonView: View {
             Button(action: action) {
                 
                 HStack {
-                    StarView()
-                        .padding(.all, 5)
-                        .frame(width: 60, height: 60)
-                    
                     Text(title)
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding(.trailing, 6)
+                    
+                    StarView()
+                        .padding(.all, 5)
+                        .frame(width: 60, height: 60)
                 }
             }
-            .frame(width: 200, height: 60)
+            .frame(width: 300, height: 60)
             .background(color)
             .cornerRadius(20)
             .overlay(
@@ -41,7 +41,7 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(title: "TapMe",
+        ButtonView(title: "How to draw ",
                    color: .blue,
                    action: {})
     }

@@ -15,7 +15,7 @@ struct ContentView: View {
                 .padding(.all, 6.0)
             TextField("3...12", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                 .frame(width: 60, height: 30.0)
-            ButtonView(title: "Draw ",
+            ButtonView(title: "How to draw",
                        color: .blue,
                        action: {})
             Spacer()
