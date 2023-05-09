@@ -17,14 +17,14 @@ struct StarView: View {
                 SectorInCircleView(rays: rays)
                     .rotationEffect(.degrees(Double(iteration) * angle))
             }
-            Text("\(angle)")
+//            Text("\(angle)")
         }
     }
 }
 
 struct StarView_Previews: PreviewProvider {
     static var previews: some View {
-        StarView(rays: 11)
+        StarView(rays: 6)
             .frame(width: 300, height: 300)
     }
 }
