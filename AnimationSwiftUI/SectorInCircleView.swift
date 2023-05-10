@@ -83,11 +83,9 @@ struct SectorInCircleView: View {
                 )
                 
                 Path { path in
-                    path.move(to: CGPoint(x: middle, y: 0))
+                    path.move(to: CGPoint(x: leftX_2, y: middleY_2))
+                    path.addLine(to: CGPoint(x: middle, y: 0))
                     path.addLine(to: CGPoint(x: rightX_2, y: middleY_2))
-                    path.addLine(to: CGPoint(x: middle, y: middle))
-                    path.addLine(to: CGPoint(x: leftX_2, y: middleY_2))
-                    path.closeSubpath()
                 }
                 .stroke(Color.black, lineWidth: 1)
             }
@@ -97,7 +95,7 @@ struct SectorInCircleView: View {
 
 struct SectorInCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        SectorInCircleView(rays: 5)
+        SectorInCircleView(rays: 8)
             .frame(width: 300, height: 300)
     }
 }
