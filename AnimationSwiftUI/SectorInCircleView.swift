@@ -40,32 +40,7 @@ struct SectorInCircleView: View {
             let middleY_2 = middle - sideB_2
             let rightX_2 = middle + sideA_2
             
-            
-            
-            VStack {
-//                Text("\(size)")
-//                Text("\(middle)")
-//                Text("\(angleCenter)")
-//                Text("\(angleCenterHalf)")
-//                Text("\(sin36)")
-//                Text("\(tgAngleTwo)")
-//                Text("\(sideA)")
-//                Text("\(littleR)")
-//                Text("\(sideA_2)")
-                
-            }
-            
             ZStack {
-                Circle()
-                    .stroke(Color.red, lineWidth: 1)
-                
-//                Circle()
-//                    .frame(width: littleR * 2)
-//                    .foregroundColor(.white)
-//                    .overlay(Circle().stroke(Color.black, lineWidth: 1))
-                    
-                
-                
                 Path { path in
                     path.move(to: CGPoint(x: middle, y: 0))
                     path.addLine(to: CGPoint(x: rightX, y: middleY))
