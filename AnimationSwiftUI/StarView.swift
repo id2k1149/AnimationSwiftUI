@@ -13,7 +13,7 @@ struct StarView: View {
         let angle = 360 / rays
         ZStack {
             ForEach(0..<rays, id: \.self) { iteration in
-               SectorInCircleView()
+                SectorInCircleView()
                     .rotationEffect(.degrees(Double(iteration * angle)))
             }
         }
